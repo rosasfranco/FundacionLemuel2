@@ -6,6 +6,7 @@ import Activities from './pages/Activities';
 import About from './pages/About';
 import Error404 from './pages/Error404';
 import Header from './components/Header';
+import Body from './components/Body';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <div>
       <BrowserRouter>
       <Header />
+      <Body />
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/activities' element={<Activities/>} />
