@@ -6,6 +6,7 @@ import Activities from './pages/Activities';
 import About from './pages/About';
 import Error404 from './pages/Error404';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -20,9 +21,11 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Error404/>} />
       </Routes>
+      <Footer />
       </BrowserRouter>
     </div>
   )
+
 }
 
 export default App
