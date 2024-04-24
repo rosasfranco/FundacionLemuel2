@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from 'lucide-react'
+import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { navLinks } from '../constants/index.js'
 import logo from '../assets/logo.png'
 import { NavLink } from "react-router-dom";
@@ -29,7 +29,7 @@ const Header = () => {
                                 onClick={() => setOpen(!open)}
                             >
                                 <span className="sr-only">Open menu</span>
-                                {open ? <X className="h-6 w-6" color='#F97316'/> : <Menu className="h-6 w-6" color='#F97316'/>}
+                                {open ? <IoIosClose className="h-6 w-6" color='#F97316'/> : <IoIosMenu className="h-6 w-6" color='#F97316'/>}
                             </button>
                         </div>
                         <nav className="hidden md:flex space-x-10">

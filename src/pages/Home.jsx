@@ -1,5 +1,4 @@
 import React from 'react'
-import { Bot } from 'lucide-react';
 import ngo2 from '../assets/ngo2.jpg'
 import ngo3 from '../assets/ngo3.jpg'
 import CardMision from '../components/CardMision';

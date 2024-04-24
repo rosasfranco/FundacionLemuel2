@@ -14,7 +14,7 @@ function App() {
     <div className=' min-h-full'>
       <BrowserRouter>
       <Header />
-      <Body />
+      {/* <Body /> */}
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/activities' element={<Activities/>} />
