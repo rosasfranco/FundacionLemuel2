@@ -96,7 +96,7 @@ const Home = () => {
     <section class="bg-white ">
     <div class="container px-6 py-10 mx-auto">
         <div class="text-center">
-            <h1 class="text-3xl font-bold sm:text-4xl text-black">Actividades Recientes</h1>
+            <h1 class="text-3xl font-bold sm:text-4xl text-headingColor">Actividades Recientes</h1>
 
             <p class="max-w-lg mx-auto mt-4 text-gray-500">
                 Salami mustard spice tea fridge authentic Chinese food dish salt tasty liquor. Sweet savory foodtruck
