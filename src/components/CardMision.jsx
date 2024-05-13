@@ -1,5 +1,4 @@
 import React from 'react'
-import { Bot } from 'lucide-react';
 
 
 const CardMision = ({text, title}) => {
@@ -7,7 +6,7 @@ const CardMision = ({text, title}) => {
     <div
         class="block rounded-xl border border-orange-100 p-8 shadow-xl transition hover:border-orange-500/10 hover:shadow-orange-500/10"
       >
-        <Bot size={44} color='orange'/>
+
         <h2 class="mt-4 text-xl font-bold text-black">{title}</h2>
         <p class="mt-1 text-sm text-gray-600">
           {text}

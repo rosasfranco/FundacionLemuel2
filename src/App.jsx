@@ -6,7 +6,7 @@ import Activities from './pages/Activities';
 import About from './pages/About';
 import Error404 from './pages/Error404';
 import Header from './components/Header';
-import Body from './components/Body';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
     <div className=' min-h-full'>
       <BrowserRouter>
       <Header />
-      <Body />
+      {/* <Body /> */}
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/activities' element={<Activities/>} />
@@ -22,9 +22,11 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Error404/>} />
       </Routes>
+      <Footer />
       </BrowserRouter>
     </div>
   )
+
 }
 
 export default App
