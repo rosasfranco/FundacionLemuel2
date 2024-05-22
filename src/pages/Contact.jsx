@@ -2,22 +2,15 @@ import React from 'react'
 import Button from '../components/Button'
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdContact, IoMdTime } from "react-icons/io";
+import ContactForm from '../components/ContactForm';
+import PageHeader from '../components/PageHeader';
 
 const Contact = () => {
   return (
-    <section>
+    <section className='py-0'>
+          <PageHeader title={"Contacto"} />
       <div class="container max-w-6xl mx-auto py-6" id="contact">
         <div class=" px-4 py-8 sm:px-6 lg:px-8 lg:py-8">
-          <div class="mb-4">
-            <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-              <p class="text-base font-semibold uppercase tracking-wide color__sub">
-                Contacto
-              </p>
-              <h2 class="title__main">
-                Ponerse en contacto
-              </h2>
-            </div>
-          </div>
           <div class="flex items-stretch justify-center">
             <div class="grid md:grid-cols-2">
               <div class="h-full pr-6">
@@ -67,28 +60,7 @@ const Contact = () => {
               </div>
               <div class="card h-fit max-w-6xl px-5 md:p-4" id="form">
                 <div class="relative rounded-lg bg-white px-8 shadow-lg sm:p-12">
-                  <form id="form" action="{{route('contact.store')}}" method="POST">
-
-                    <div class="mb-6">
-                      <input type="text" placeholder="Nombre" name="nombre" class="input__style " value="" />
-
-                    </div>
-                    <div class="mb-6">
-                      <input type="email" placeholder="Email" name="email" class="input__style" value="" />
-
-                    </div>
-                    <div class="mb-6">
-                      <input type="text" placeholder="Telefono" name="telefono" class="input__style" value="" />
-                    </div>
-                    <div class="mb-6">
-                      <textarea rows="6" placeholder="Deja tu comentario.." name="mensaje" class="input__style resize-none"></textarea>
-
-                    </div>
-                    <div>
-                      <Button text={"Enviar"} className={'text-white bg-[#f58634]'}>
-                      </Button>
-                    </div>
-                  </form>
+                 <ContactForm />
                   <div>
                   </div>
                 </div>
